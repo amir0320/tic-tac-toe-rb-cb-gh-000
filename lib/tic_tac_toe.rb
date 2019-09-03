@@ -36,7 +36,15 @@ def valid_move?(board, index)
 end
 
 def turn(board)
-
+        index = nil
+        while index == nil
+                puts "Please enter a number from 1-9:"
+                input = input_to_index(gets.strip)
+                if valid_move?(board, input)
+                        index = input
+                end
+        end
+        move(board, index, player)
 end
 
 def won?(board)
