@@ -47,6 +47,16 @@ def turn(board)
         move(board, index, player)
 end
 
+def turn_count(board)
+        counter = 0
+        board.each do |position|
+                if position != " "
+                        counter += 1
+                end
+        end
+        return turn_count
+end
+
 def won?(board)
         WIN_COMBINATIONS.detect do |win_combination|
                 board[win_combination[0]] == board[win_combination[1]] &&
