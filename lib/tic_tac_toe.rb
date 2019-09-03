@@ -19,6 +19,10 @@ def display_board(board)
         puts "-----------"
 end
 
+def input_to_index(user_input)
+
+end
+
 def position_taken?(board, index)
         !(board[index].nil? || board[index] == " ")
 end
