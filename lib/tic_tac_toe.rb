@@ -35,6 +35,10 @@ def valid_move?(board, index)
         return !position_taken?(board, index) && index.between?(0, 8)
 end
 
+def turn(board)
+
+end
+
 def won?(board)
         WIN_COMBINATIONS.detect do |win_combination|
                 board[win_combination[0]] == board[win_combination[1]] &&
