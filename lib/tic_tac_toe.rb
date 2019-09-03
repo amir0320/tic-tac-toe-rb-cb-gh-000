@@ -23,6 +23,10 @@ def input_to_index(user_input)
         return user_input.to_i - 1
 end
 
+def move(board, index, player = "X")
+
+end
+
 def position_taken?(board, index)
         !(board[index].nil? || board[index] == " ")
 end
