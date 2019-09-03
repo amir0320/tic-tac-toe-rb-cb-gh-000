@@ -87,3 +87,7 @@ def winner(board)
                 return board[win_comb[0]]
         end
 end
+
+def play
+
+end
