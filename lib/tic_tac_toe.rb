@@ -35,10 +35,7 @@ def over?(board)
 end
 
 def winner(board)
-        win_comb = won?(board)
-        if win_comb
+        if win_comb = won?(board)
                 return board[win_comb[0]]
-        else
-                return nil
         end
 end
